@@ -1,1 +1,15 @@
-
+{
+  "name": "prompt-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "openai": "^6.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^48.0.0"
+  }
+}
