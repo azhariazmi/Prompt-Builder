@@ -1,6 +1,6 @@
 export const templates = [
   {
-    id: "couples",
+    id: "couple",
     icon: "❤️",
     name: "Romantic Couple",
     description: "Romantic couple photography",
