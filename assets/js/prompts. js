@@ -1,1 +1,30 @@
-
+export const templates = [
+  {
+    id: "couple",
+    icon: "❤️",
+    name: "Romantic Couple",
+    description: "Romantic couple photography",
+    prompt: "Create a beautiful romantic portrait of a couple standing together on a beach during golden hour. The man and woman have natural expressions and elegant outfits. The background features a breathtaking sunset, soft ocean waves and warm cinematic lighting. Capture genuine emotion, realistic skin textures, detailed facial features and professional photography composition."
+  },
+  {
+    id: "portrait",
+    icon: "👤",
+    name: "Portrait",
+    description: "Personal portrait photography",
+    prompt: "Create a professional portrait of a stylish person looking confidently at the camera. Use beautiful studio lighting, realistic skin details, natural facial expressions, elegant composition and a premium photography aesthetic."
+  },
+  {
+    id: "fashion",
+    icon: "👗",
+    name: "Fashion",
+    description: "Fashion and editorial",
+    prompt: "Create a high-end fashion editorial photograph featuring a stylish model wearing modern designer clothing. Use dramatic lighting, beautiful composition, realistic fabric details and a luxury magazine photography aesthetic."
+  },
+  {
+    id: "cinematic",
+    icon: "🎬",
+    name: "Cinematic Scene",
+    description: "Movie-inspired scenes",
+    prompt: "Create a cinematic movie scene with dramatic lighting, atmospheric environment, beautiful camera composition, realistic details and professional film color grading."
+  }
+];
