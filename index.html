@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#160d30">
+<meta name="description" content="Prompt Builder is your creative AI prompt builder. Create, customize and enhance prompts for images, videos and creative projects.">
+<meta name="keywords" content="AI prompt generator, prompt builder, image prompts, video prompts, OpenAI">
+<meta name="author" content="Prompt Studio">
+<meta name="robots" content="index,follow">
 
+<title>Prompt Studio - Create Better AI Prompts</title>
+
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+<div class="background-effects">
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+</div>
+
+<header class="header">
+  <a href="/" class="brand">
+    <span class="brand-icon">✦</span>
+    <span>Prompt<span class="brand-accent">Studio</span></span>
+  </a>
+
+  <div class="header-right">
+    <span class="status-dot"></span>
+    <span class="header-status">Creative workspace</span>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <div class="hero-tag">✧ YOUR AI CREATIVE PLAYGROUND</div>
+
+    <h1>
+      Imagine it.<br>
+      <span>Prompt it.</span>
+    </h1>
+
+    <p>
+      Turn your ideas into powerful AI prompts.
+      Create something extraordinary.
+    </p>
+  </section>
+
+  <section class="workspace">
+
+    <aside class="sidebar panel">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">GET INSPIRED</span>
+          <h2>Templates</h2>
+        </div>
+        <span class="template-count">04</span>
+      </div>
+
+      <div id="template-list" class="template-list"></div>
+
+      <div class="sidebar-note">
+        <span>💡</span>
+        <p>Choose a template or write your own creative idea.</p>
+      </div>
+
+    </aside>
+
+    <section class="editor panel">
+
+      <div class="editor-heading">
+        <div>
+          <span class="eyebrow">YOUR CREATIVE SPACE</span>
+          <h2>Prompt Editor</h2>
+        </div>
+
+        <span class="ai-label">
+          <span>✦</span> OPENAI
+        </span>
+      </div>
+
+      <label class="field-label" for="prompt-input">
+        Describe your idea
+      </label>
+
+      <textarea
+        id="prompt-input"
+        maxlength="6000"
+        placeholder="Describe what you want to create..."
+      ></textarea>
+
+      <div class="input-footer">
+        <span id="character-count">0 / 6000</span>
+        <button id="clear-button" class="text-button">Clear</button>
+      </div>
+
+      <div class="field-group">
+
+        <label class="field-label" for="style-select">
+          Creative style
+        </label>
+
+        <select id="style-select">
+          <option value="cinematic">🎬 Cinematic</option>
+          <option value="photorealistic">📸 Photorealistic</option>
+          <option value="dreamy">✨ Dreamy</option>
+          <option value="editorial">💎 Editorial</option>
+          <option value="anime">🌸 Anime</option>
+        </select>
+
+      </div>
+
+      <button id="generate-button" class="primary-button">
+        <span class="button-icon">✦</span>
+        <span id="generate-label">Enhance with ChatGPT</span>
+        <span class="button-arrow">→</span>
+      </button>
+
+      <p class="privacy-note">
+        Your prompt is sent securely to our OpenAI API endpoint.
+      </p>
+
+      <div id="status-message" class="status-message" aria-live="polite"></div>
+
+      <div class="result-section">
+
+        <div class="result-heading">
+          <div>
+            <span class="eyebrow">YOUR CREATION</span>
+            <h2>Enhanced Prompt</h2>
+          </div>
+
+          <span class="result-sparkle">✧</span>
+        </div>
+
+        <textarea
+          id="result-output"
+          placeholder="Your enhanced prompt will appear here..."
+          readonly
+        ></textarea>
+
+        <div class="result-actions">
+          <button id="copy-button" class="secondary-button">
+            <span>▣</span> Copy
+          </button>
+
+          <button id="download-button" class="secondary-button">
+            <span>↓</span> Download TXT
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </section>
+
+  <section class="bottom-info">
+    <div>✦ Made for creative minds</div>
+    <div>Creator by Azhari Bin Azmi</div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Prompt Builder. Create without limits.</p>
+</footer>
+
+<script type="module" src="/assets/js/app.js"></script>
+
+</body>
+</html>
